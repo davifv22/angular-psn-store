@@ -1,0 +1,3 @@
+<div class="home__container">
+    <app-card *ngFor="let card of cards" [routerLink]="['game', card.id]" id="{{card.id}}" cardTitle="Buy Now!" gameCover="{{card.image}}" gameLabel="{{card.label}}" gameType="{{card.type}}" gamePrice="{{card.price}}"></app-card>
+</div>
